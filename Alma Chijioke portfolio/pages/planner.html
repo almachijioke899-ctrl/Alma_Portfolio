@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic Planner | Alma Chijioke</title>
+
+    <link rel="stylesheet" href="planner.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<a href="../index.html">
+
+Alma<span>.</span>
+
+</a>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="about-me.html">About</a></li>
+
+<li><a href="projects-page.html">Projects</a></li>
+
+<li><a href="planner.html" class="active">Planner</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="planner-hero">
+
+<h1>Academic Task Planner</h1>
+
+<p>
+
+Stay organized, manage your coursework,
+and keep track of important deadlines.
+
+</p>
+
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard">
+
+<div class="stat-card">
+
+<h2 id="totalTasks">0</h2>
+
+<p>Total Tasks</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="pendingTasks">0</h2>
+
+<p>Pending</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="completedTasks">0</h2>
+
+<p>Completed</p>
+
+</div>
+
+</section>
+
+<!-- ================= TASK FORM ================= -->
+
+<section class="task-form">
+
+<h2>Add New Task</h2>
+
+<form id="plannerForm">
+
+<input
+type="text"
+id="taskTitle"
+placeholder="Task Title"
+required>
+
+<input
+type="text"
+id="courseCode"
+placeholder="Course Code (COS106)"
+required>
+
+<input
+type="date"
+id="dueDate"
+required>
+
+<select id="priority">
+
+<option>High</option>
+
+<option>Medium</option>
+
+<option>Low</option>
+
+</select>
+
+<button type="submit">
+
+<i class="fas fa-plus"></i>
+
+Add Task
+
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Search tasks...">
+
+</section>
+
+<!-- ================= FILTERS ================= -->
+
+<section class="filters">
+
+<button class="filter active"
+data-filter="all">
+
+All
+
+</button>
+
+<button class="filter"
+data-filter="pending">
+
+Pending
+
+</button>
+
+<button class="filter"
+data-filter="completed">
+
+Completed
+
+</button>
+
+</section>
+
+<!-- ================= TASK LIST ================= -->
+
+<section>
+
+<div id="taskList"></div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Alma Chijioke Chaizokam
+
+</p>
+
+</footer>
+
+<script src="planner.js"></script>
+
+</body>
+
+</html>
